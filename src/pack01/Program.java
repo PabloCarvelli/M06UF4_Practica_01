@@ -9,7 +9,7 @@ public class Program {
 		
 		fuente.agregarObservador(vista1);
 		
-		while(fuente.getMaximoPlazasMoto() < fuente.getMaximoPlazasMoto()) {
+		while(fuente.getPlazasMoto() < fuente.getMaximoPlazasMoto()) {
 			fuente.entradaMoto();
 			System.out.println("Plazas de moto en este parking: " + vista1.getPlazasMoto());
 		}

@@ -4,8 +4,8 @@ import java.util.*;
 
 public class ValorCambioEvento extends EventObject {
 	
-	private int plazasMoto;
-	private int plazasCoche;
+	private int plazasMoto = 0;
+	private int plazasCoche = 0;
 	
 	public ValorCambioEvento(Parking o, int plazasMoto, int plazasCoche) {
 		super(o);

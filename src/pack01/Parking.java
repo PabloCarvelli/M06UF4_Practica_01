@@ -12,6 +12,10 @@ public class Parking {
 	private int plazasMoto = 0;
 	private int plazasCoche = 0;
 	
+	public Parking() {
+		
+	}
+	
 	public Parking(int motos, int coches) {
 		
 		this.maximoPlazasMoto = motos;
@@ -70,7 +74,7 @@ public class Parking {
 	}
 	
 	private void notificaCambio() {
-		ValorCambioEvento evento = new ValorCambioEvento(this, 10, 10);
+		ValorCambioEvento evento = new ValorCambioEvento(this, 1, 1);  // no entiendo para que son estos dos numeros.
 		for(ControlPlazasParking x: listeners) {
 			x.fuenteIncrementada(evento);
 		}
