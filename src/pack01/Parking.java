@@ -6,6 +6,8 @@ public class Parking {
 	
 	private ArrayList<ControlPlazasParking> listeners = new ArrayList();
 	
+	private String nombre;
+	
 	private int maximoPlazasMoto;
 	private int maximoPlazasCoche;
 	
@@ -16,8 +18,13 @@ public class Parking {
 		
 	}
 	
-	public Parking(int motos, int coches) {
+	public String getNombre() {
+		return nombre;
+	}
+	
+	public Parking(int motos, int coches, String nombre) {
 		
+		this.nombre = nombre;
 		this.maximoPlazasMoto = motos;
 		this.maximoPlazasCoche = coches;
 		
